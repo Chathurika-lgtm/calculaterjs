@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .m1 {
+        background-color: rgb(108, 103, 103);
+        padding: 50px;
+        margin-left: 450px;
+        margin-bottom: 150px;
+        margin-right: 450px;
+        text-decoration: solid;
+      }
+      input[type="button"]{
+        background-color: brown;
+        align-items: center;
+        margin-right: 20px;
+      }
+      input[type="button"]:hover {
+        background: rgb(50, 50, 71);
+
+        color: rgb(213, 110, 110);
+      }rgb(224, 115, 115)rgb(115, 160, 224)rgb(105, 158, 232)
+    </style>
+  </head>
+  <body>
+    <form action="" method="post" name="m1" class="m1">
+      <br />
+      <h2 align="center">Calculator</h2>
+      Enter First Number:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input
+        type="text"
+        name="t1"
+      />
+      <br /><br />
+      Enter second Number: &nbsp<input type="text" name="t2" /><br /><br />
+      Answer:
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <input type="text" name="t3" /><br /><br />
+
+      <input type="button" name="t5" value="Addition" onclick="add()" />
+      <input type="button" name="t6" value="Subtraction" onclick="sub()" />
+      <input type="button" name="t4" value="Multiplication" onclick="mul()" />
+      <input type="button" name="t7" value="Division" onclick="div()" />
+    </form>
+
+    <script>
+      function add() {
+        var a = eval(document.m1.t1.value);
+        var b = eval(document.m1.t2.value);
+        var c = a + b;
+        document.m1.t3.value = c;
+      }
+
+      function sub() {
+        var a = eval(document.m1.t1.value);
+        var b = eval(document.m1.t2.value);
+        var c = a - b;
+        document.m1.t3.value = c;
+      }
+      function mul() {
+        var a = eval(document.m1.t1.value);
+        var b = eval(document.m1.t2.value);
+        var c = a * b;
+        document.m1.t3.value = c;
+      }
+      function div() {
+        var a = eval(document.m1.t1.value);
+        var b = eval(document.m1.t2.value);
+        var c = a / b;
+        document.m1.t3.value = c;
+      }
+    </script>
+  </body>
+</html>
